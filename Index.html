@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            transition: background 0.5s ease;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+        input[type="submit"], button {
+            background: #191a20;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover, button:hover {
+            background: red;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gwababa</h1>
+        <form id="questionnaireForm">
+            <label for="name">1. What is your name?</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">2. How old are you?</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="bc">3. What is your body count?</label>
+            <input type="text" id="bc" name="email" required>
+
+            <label for="satisfaction">4. How much gwababa do you have? (1-10)</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" required>
+
+            <label for="favorite-color">5. Who do you wanna smash the most?</label>
+            <input type="text" id="favorite-color" name="favorite-color" required>
+
+            <label for="birth-date">6. when was your last humbing experience?</label>
+            <input type="date" id="birth-date" name="birth-date" required>
+
+            <label for="wake-time">7. What time is best for clapping then cheeks?</label>
+            <input type="time" id="wake-time" name="wake-time" required>
+
+            <label for="transportation">8. Which is best place for clapping cheeks?</label>
+            <select id="transportation" name="transportation" required>
+                <option value="">Select an option</option>
+                <option value="car">Car</option>
+                <option value="public-transport">Public Transport</option>
+                <option value="bicycle">Bicycle</option>
+                <option value="walking">Walking</option>
+            </select>
+
+            <label for="hobbies">9. Who got that "BOMBOCLATTT" type gyat?</label>
+            <textarea id="hobbies" name="hobbies" rows="3" required></textarea>
+
+            <label for="favorite-number">10. What is your body count?</label>
+            <input type="number" id="favorite-number" name="favorite-number" required>
+
+            <label for="website">11. What is when last did you Witness a humbling experience?</label>
+            <input type="text" id="website" name="website">
+
+            <label for="phone">12. What is your phone number? (for testing purposed)</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label>13. Which social media platforms do you use to watch cheek clapping?</label>
+            <br>
+            <div>
+                <input type="checkbox" id="facebook" name="social-media" value="facebook">
+                <label for="facebook">Facebook</label>
+            </div>
+            <div>
+                <input type="checkbox" id="twitter" name="social-media" value="twitter" style="display:inline;">
+                <label for="twitter">Twitter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="instagram" name="social-media" value="instagram">
+                <label for="instagram">Instagram</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Nursery" name="social-media" value="Nursery">
+                <label for="Nursery">Nursery School tv</label>
+            </div>
+<br>
+            <label>14. What is your gender?</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">ATTACK HELICOPTER</label>
+            </div>
+<br>
+            <label for="height">15. What is your height in cm? (TRENDS)</label>
+            <input type="number" id="height" name="height" min="0" step="0.1" required>
+
+            <label for="favorite-food">16. What is your favorite food (Gyat or Bazookas?</label>
+            <input type="text" id="favorite-food" name="favorite-food" required>
+
+            <label for="languages">17. How many bitches you got?</label>
+            <input type="number" id="languages" name="languages" min="1" required>
+
+            <label for="travel">18. How often do you masturbate?</label>
+            <select id="travel" name="travel" required>
+                <option value="">Select an option</option>
+                <option value="never">Never</option>
+                <option value="rarely">Rarely</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="often">Often</option>
+                <option value="very-often">Very Often</option>
+            </select>
+
+            <label for="pets">19. Do you have any side chicks?</label>
+            <input type="text" id="pets" name="pets" required>
+
+            <label for="life-goal">20. What is your biggest life goal? (wank time)</label>
+            <textarea id="life-goal" name="life-goal" rows="3" required></textarea>
+
+            <div class="button-container">
+                <button type="button" id="changeBackground">Are you horny ?</button>
+                <button type="button" id="animatePage">Dont press</button>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gwababa. All rights reserved.</p>
+        <p>Created by yours truly Swaye</p>
+        <p>Instagram-@Swaye61</p>
+    </footer>
+
+    <script>
+        document.getElementById('changeBackground').addEventListener('click', function() {
+            document.body.style.background = 'linear-gradient(135deg, #ff0844 0%, #ffb199 100%)';
+        });
+
+        document.getElementById('animatePage').addEventListener('click', function() {
+            const form = document.querySelector('form');
+            form.style.transition = 'transform 0.5s ease';
+            form.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                form.style.transform = 'scale(1)';
+            }, 500);
+        });
+
+        document.getElementById('questionnaireForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const email = 'dainedarck3@gmail.com'; 
+            const subject = 'Questionnaire Submission';
+            let body = 'Questionnaire Responses:\n\n';
+            for (let [key, value] of formData.entries()) {
+                body += `${key}: ${value}\n`;
+            }
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+</html>
+
